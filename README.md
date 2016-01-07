@@ -5,6 +5,8 @@ This project provides a set of resource-intensive cloud-tenants, which can be us
 * Start/Stop each burner
 * Modify and update the tenants' running options
 
+![picture of GUI](images/cloudBurnersGUI.png?raw=true)
+
 There are five different burners provided:
 
 * CPU: repeatedly decides if a large prime number is indeed prime. The user can control the number of threads used.
