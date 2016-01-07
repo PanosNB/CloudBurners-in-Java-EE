@@ -10,8 +10,8 @@ This project provides a set of resource-intensive cloud-tenants, which can be us
 There are five different burners provided:
 
 * CPU: repeatedly decides if a large prime number is indeed prime. The user can control the number of threads used.
-* Cache: creates a shared byte array (equal to L3 cache sizes of some contemporary CPUs) and repeatedly touches some cache line and then, yields the CPU. The user can control the number of threads used as well as the buffer and line sizes.
-* Memory: creates non-shared byte arrays per thread and repeatedly touches some memory block and then, yields the CPU. The user can control the number of threads used as well as the buffer and page sizes.
+* Cache: creates a shared byte array (should be equal to L3 cache sizes) and repeatedly touches some cache line and then, yields the CPU. The user can control the number of threads used as well as the buffer and line sizes.
+* Memory: creates non-shared byte arrays per thread (should be as large as possible) and repeatedly touches some memory block and then, yields the CPU. The user can control the number of threads used as well as the buffer and page sizes.
 * Disk: repeatedly opens a file, writes a number in it and closes it. The user can control the number of threads used.
 * Network: establishes a connection to a network sink (the networkSink.c file provides one) and repeatedly sends the same message to it. The user can control the number of threads used, the name and port of the drain server as well as the size of the message.
 
